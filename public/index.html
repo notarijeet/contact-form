@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-fillup</title>
+    <link href=
+    "https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            font-family: 'Poppins',sans-serif;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading{
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: beige;
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #submit{
+            border-bottom: 4px black solid;
+            border-radius: 6px;
+            padding: 10px;
+            color: whitesmoke;
+            margin-top: 20px;
+            background-color: cadetblue;
+            
+        }
+
+       
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="main-container">
+        <br>
+        <div class="heading">FORM SUBMISSION</div>
+        <br>
+        <form action="http://localhost:8000/formFillup" method="post">
+            <div class="container">
+                <label for="inputname" style="font-size: 23px;">Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+
+                <label for="email" style="font-size: 23px;">Email</label>
+                <input type="email" class="form-control" id="email" name="email">
+
+
+                <label for="branch" style="font-size: 23px;">branch</label>
+                <input type="text" class="form-control" id="branch" name="branch">
+
+                <label for="year" style="font-size: 23px;">year</label>
+                <input type="text" class="form-control" id="year"  name="year">
+
+                <button id="submit" type="submit">submit</button>
+            </div>
+        </form>
+        
+
+    </div>
+    
+    
+</body>
+</html> 
